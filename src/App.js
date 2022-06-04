@@ -1,9 +1,15 @@
-import Header from "./components/Header";
+// import Header from "./components/Header";
 import './App.scss'
+import { Routes, Route } from "react-router-dom";
+import Layout from './components/Layout';
+
+
 function App() {
   return (
     <>
-    <Header />
+    <Routes>
+      <Route path="/" element={<Layout />}/>
+    </Routes>
     </>
   );
 }
